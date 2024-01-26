@@ -1,0 +1,41 @@
+{
+  "name": "kv-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "kv": "./bin/kv.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "chalk": "~5.3.0",
+    "commander": "~11.0.0",
+    "fs-extra": "~11.1.1",
+    "jsonschema": "~1.4.1",
+    "lodash": "~4.17.21"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "~11.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ballcoach12/kv-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ballcoach12/kv-node/issues"
+  },
+  "homepage": "https://github.com/ballcoach12/kv-node#readme"
+}
